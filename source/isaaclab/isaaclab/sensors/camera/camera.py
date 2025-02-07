@@ -343,6 +343,7 @@ class Camera(SensorBase):
         """
         # resolve env_ids
         if env_ids is None:
+            # self._ALL_INDICES = torch.arange(self._view.count, device=self._device, dtype=torch.long)
             env_ids = self._ALL_INDICES
         # get up axis of current stage
         up_axis = stage_utils.get_stage_up_axis()
